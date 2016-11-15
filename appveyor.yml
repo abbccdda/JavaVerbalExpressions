@@ -1,0 +1,9 @@
+install:
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
+test_script:
+  - mvn test
+  - mvn clean cobertura:cobertura -Dcobertura.report.format=xml org.eluder.coveralls:coveralls-maven-plugin:3.0.1:report
+
+
+build: off
