@@ -1,5 +1,6 @@
-environments:
+environment:
   COVERALLS_SERVICE_NAME: appveyor_test
+  COVERALLS_REPO_TOKEN: 8lXc2riIWKCpWIzRBxTitoZN667hYNdT3
 
 install: 
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
