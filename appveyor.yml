@@ -1,5 +1,8 @@
+environments:
+  COVERALLS_SERVICE_NAME: appveyor_test
+
 install: 
-  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -e
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 
 test_script:
   - mvn test
