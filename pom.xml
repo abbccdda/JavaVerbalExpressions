@@ -70,6 +70,7 @@
             </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
+                <skip>true</skip>
                 <artifactId>cobertura-maven-plugin</artifactId>
                 <version>2.6</version>
                 <executions>
